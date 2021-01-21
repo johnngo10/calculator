@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100%;
+  background-color: #8ec5fc;
+  background: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%) no-repeat;
+}
+
+/* #title {
+  margin-bottom: 60px;
+} */
+
+main {
+  /* border: 1px solid grey; */
+  width: 400px;
+  height: 500px;
+  /* box-shadow: 2px 2px 12px #888888; */
+  box-shadow: 2px 2px 15px #333333;
+}
+
+#display-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 20%;
+  color: white;
+  background-color: #333333;
+}
+
+#display {
+  margin: 10px;
+  font-size: 50px;
+}
+
+#oper-display {
+  margin: 20px 10px 0 10px;
+}
+
+#buttons-container {
+  height: 80%;
+}
+
+#operators {
+  display: flex;
+  height: 20%;
+}
+
+.oper-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  background-color: #c0c0c0;
+  width: 25%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.oper-buttons:hover {
+  cursor: pointer;
+}
+
+.oper-buttons:active {
+  cursor: pointer;
+  background-color: #858585;
+}
+
+#numberpad {
+  display: flex;
+  height: 80%;
+}
+
+#num-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.num {
+  display: flex;
+  border: 1px solid grey;
+  width: 32.65%;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #eeeeee;
+}
+
+.num:hover {
+  cursor: pointer;
+}
+
+.num:active {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.995);
+}
+
+#equals-container {
+  width: 25%;
+}
+
+#equals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  height: 99.5%;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #ff7373;
+}
+
+#equals:hover {
+  cursor: pointer;
+}
+
+#equals:active {
+  cursor: pointer;
+  background-color: #fa5050;
+}
+
+#equals:focus {
+  outline: none;
+}
