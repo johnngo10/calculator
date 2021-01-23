@@ -15,35 +15,25 @@ body {
   background: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%) no-repeat;
 }
 
-/* #title {
-  margin-bottom: 60px;
-} */
-
 main {
-  /* border: 1px solid grey; */
   width: 400px;
   height: 500px;
-  /* box-shadow: 2px 2px 12px #888888; */
   box-shadow: 2px 2px 15px #333333;
 }
 
 #display-container {
   display: flex;
   justify-content: flex-end;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   height: 20%;
   color: white;
   background-color: #333333;
+  /* overflow: hidden; */
 }
 
 #display {
-  margin: 10px;
+  margin: 10px 20px 10px 10px;
   font-size: 50px;
-}
-
-#oper-display {
-  margin: 20px 10px 0 10px;
 }
 
 #buttons-container {
