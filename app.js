@@ -70,7 +70,11 @@ function operate(operator, num1, num2) {
 // Display
 
 function displayFunc(e) {
-  if (displayNum === '0') {
+  if (displayNum === '0' && calculated === true) {
+    calculated = false;
+    firstNum = '';
+    displayNum = e;
+  } else if (displayNum === '0' && calculated === false) {
     displayNum = e;
   } else {
     displayNum += e;
@@ -136,6 +140,7 @@ equals.addEventListener('click', e => {
     operate(operator, firstNum, displayNum);
     display.textContent = result;
     firstNum = result;
+    displayNum = '0';
     calculated = true;
   }
 });
@@ -181,6 +186,7 @@ window.onkeyup = function (e) {
       operate(operator, firstNum, displayNum);
       display.textContent = result;
       firstNum = result;
+      displayNum = '0';
       calculated = true;
     }
   } else if (key === 'Backspace') {
